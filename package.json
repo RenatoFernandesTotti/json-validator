@@ -1,0 +1,19 @@
+{
+  "name": "json-validator",
+  "version": "0.0.1",
+  "description": "Um pacote para verificar se um json contem todos os campos desejados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "node",
+    "javascript"
+  ],
+  "author": "Renato Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "flat": "^5.0.0"
+  }
+}
