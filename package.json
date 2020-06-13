@@ -15,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "flat": "^5.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/RenatoFernandesTotti/json-validator"
   }
 }
