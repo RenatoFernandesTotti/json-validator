@@ -1,6 +1,6 @@
 const flat = require('flat')
 
-class jsonChecker {
+class jsonValidator {
 
     //public properties
 
@@ -36,9 +36,10 @@ class jsonChecker {
 
     /**
      * 
-     * @param {*} object 
+     * @param {object} object 
      * @param {object} options
      * @param {boolean} options.throwError 
+     * @returns {[String]}
      */
     validateJSON(object, options = {
         throwError: false
@@ -82,8 +83,10 @@ class jsonChecker {
 
     /**
      * 
-     * @param {array[object]} array 
+     * @param {[object]} array 
      * @param {object} options 
+     * @param {boolean} options.throwError 
+     * @returns {[String]}
      */
     validateJSONArray(array, options = {
         throwError: false
@@ -108,7 +111,6 @@ class jsonChecker {
                 } catch (error) {
                     error.message = error.message.replace("Error:", "");
                     error.message=error.message + ` at position ${i} of the array`
-                    console.log(error.message);
                     errorMessages.push(error.message)
                 } finally {
                     i++
@@ -128,4 +130,4 @@ class jsonChecker {
 }
 
 
-module.exports = jsonChecker
+module.exports = jsonValidator
