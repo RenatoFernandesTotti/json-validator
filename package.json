@@ -1,5 +1,5 @@
 {
-  "name": "json-validator",
+  "name": "json-field-validator",
   "version": "0.0.1",
   "description": "Um pacote para verificar se um json contem todos os campos desejados",
   "main": "index.js",

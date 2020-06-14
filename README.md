@@ -1,4 +1,4 @@
-# json-validator
+# json-field-validator
 
 This is a npm package to make validation of jsons more easy.
 
@@ -15,7 +15,7 @@ This is a npm package to be used with node.
 To install use:
 
 ``` bash
-npm i json-validator
+npm i json-field-validator
 ```
 
 ## How to use
@@ -24,7 +24,7 @@ To use this package you'll need to create a new validator using a template as
 follows:
 
 ``` javascript
-const jsonVal=require('json-validator')
+const jsonVal=require('json-field-validator')
 
 //create a template with data types
 
